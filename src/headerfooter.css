@@ -1,0 +1,56 @@
+:root {
+  --maincolor: rgba(190, 0, 0);
+  --secondcolor: rgb(241, 241, 241);
+  --colorforbackgroundtext: rgba(255, 255, 255, 0.9);
+}
+
+/* ----------------- HEADER -------------------------- */
+
+ul,
+li,
+a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondcolor);
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+a:hover,
+li:hover {
+  background-color: var(--secondcolor);
+  color: var(--maincolor);
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- FOOTER ---------------------------- */
+
+footer {
+  background-color: rgb(190, 0, 0);
+  height: 6vh;
+  width: 100%;
+  margin-top: auto;
+  bottom: 0;
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
