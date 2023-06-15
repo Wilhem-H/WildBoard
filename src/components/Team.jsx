@@ -14,6 +14,8 @@ function Team() {
               </div>
               <div className="info-body">
                 <p>{s.github}</p>
+                <p>{s.mail}</p>
+                <p>{s.phone}</p>
               </div>
             </div>
           </div>

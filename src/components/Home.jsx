@@ -1,29 +1,127 @@
-import charte from "../assets/charte.jpg";
 import Logo from "../assets/Logo.png";
+import ChartePicture from "../assets/fondImgCharte.jpg";
+import LogoPicture from "../assets/DesignTest.png";
+
+import "./Home.css";
 
 function Home() {
   return (
     <main>
-      <div className="homeContent1">
-        <div className="text1">
-          <h1>Promo Développeur WEB/Mobile Wild Valence</h1>
-          <p className="presentation">Période: du 27/02/2023 au 19/12/2023</p>
-          <p className="presentation">
-            19Formation, <br />
-            34 Rue Henri Rey, <br />
+      <section className="homeText">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#BE0000"
+            d="M40.6,-38C56.1,-25.1,74.5,-12.6,73.6,-0.9C72.7,10.8,52.5,21.6,37.1,36.3C21.6,51.1,10.8,69.9,-5.5,75.4C-21.8,80.9,-43.7,73.2,-54.7,58.4C-65.7,43.7,-65.8,21.8,-63.7,2.2C-61.5,-17.5,-57,-35,-46,-47.9C-35,-60.8,-17.5,-69.1,-2.5,-66.6C12.6,-64.2,25.1,-50.9,40.6,-38Z"
+            transform="translate(100 100)"
+          />
+          <text
+            x="50%"
+            y="40%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="6"
+            fill="#FFFFFF"
+            fontFamily="sans-serif"
+          >
+            Promo Développeur WEB/Mobile Wild Valence
+          </text>
+          <text
+            x="50%"
+            y="47%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="5"
+            fill="#FFFFFF"
+          >
+            du 27/02/2023 au 19/12/2023
+          </text>
+          <text
+            x="50%"
+            y="55%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="5"
+            fill="#FFFFFF"
+          >
+            19Formation
+          </text>
+          <text
+            x="50%"
+            y="60%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="5"
+            fill="#FFFFFF"
+          >
+            34 Rue Henri Rey
+          </text>
+          <text
+            x="50%"
+            y="65%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="5"
+            fill="#FFFFFF"
+          >
             26000 Valence
+          </text>
+        </svg>
+      </section>
+      <section className="charte">
+        {/* <div className="chartePicture"></div> */}
+        <img className="chartePicture" src={ChartePicture} />
+        <h1 className="charteH1">Charte de groupe</h1>
+      </section>
+      <hr className="trait-horizontal" />
+      <section>
+        <p className="charteElement">
+          I. A la pause de Laurence tu t’adapteras.
+        </p>
+        <p className="charteElement">
+          II. Le matériel de chacun tu respecteras.
+        </p>
+        <p className="charteElement">III. Le JavaScript tu vénéreras. </p>
+        <p className="charteElement">
+          IV. La communauté, le vendredi, tu écouteras.{" "}
+        </p>
+        <p className="charteElement">
+          V. Sur l’espace de travail de ton voisin, tu ne déborderas pas.{" "}
+        </p>
+        <p className="charteElement">
+          VI. Le matériel des autres, tu ne casseras pas.
+        </p>
+        <p className="charteElement">
+          VII. La pression pour les projets, tu ne te mettras pas.{" "}
+        </p>
+        <p className="charteElement">
+          VIII. Pour le Kahoot, tout tu donneras.{" "}
+        </p>
+        <p className="charteElement">IX. Motivé, le lundi, tu viendras. </p>
+        <p className="charteElement">
+          X. Nils remplace Laurence pour la règle numéro I.
+        </p>
+      </section>
+      <section>
+        <hr className="trait-horizontal" />
+      </section>
+      <section className="charte">
+        <img className="logoPicture" src={LogoPicture} />
+        <h2 className="LogoH1"> Notre Logo</h2>
+      </section>
+      <section className="homePresentation">
+        <section>
+          <p className="teamTextTop">
+            Une équipe <strong>motivée</strong>!
           </p>
-        </div>
-      </div>
-      <div>
-        <div className="homeContent2">
-          <h1>Charte de groupe</h1>
-          <img className="image2" src={charte} />
-        </div>
-      </div>
-      <div className="bear">
-        <img className="logoimg" src={Logo} />
-      </div>
+          <img className="logo" src={Logo} />
+          <p className="teamTextBottom">
+            Ou <strong>bonne ambiance</strong> et <strong>tryhard</strong> sont
+            les maitres mots!
+          </p>
+        </section>
+      </section>
+
+      <section className="charte"></section>
     </main>
   );
 }
