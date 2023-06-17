@@ -1,0 +1,30 @@
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  color: var(--colorforbackgroundtext);
+  padding: 1rem;
+}
+
+Footer {
+  background-color: var(--maincolor);
+}
+
+.social-icon {
+  width: 1.6rem;
+  margin: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a img:hover {
+  text-decoration: none;
+  transform: scale(1.2) rotate(-1deg);
+}

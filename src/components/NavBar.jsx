@@ -5,7 +5,7 @@ import logowild from "../assets/logowild.jpg";
 
 const Header = styled.header`
   display: flex;
-  position: fixed;
+  // position: fixed;
   justify-content: space-between;
   list-style: none;
   height: 15vh;

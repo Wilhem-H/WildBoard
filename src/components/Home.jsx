@@ -8,7 +8,11 @@ function Home() {
   return (
     <main>
       <section className="homeText">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          className="rotating-svg"
+        >
           <path
             fill="#BE0000"
             d="M40.6,-38C56.1,-25.1,74.5,-12.6,73.6,-0.9C72.7,10.8,52.5,21.6,37.1,36.3C21.6,51.1,10.8,69.9,-5.5,75.4C-21.8,80.9,-43.7,73.2,-54.7,58.4C-65.7,43.7,-65.8,21.8,-63.7,2.2C-61.5,-17.5,-57,-35,-46,-47.9C-35,-60.8,-17.5,-69.1,-2.5,-66.6C12.6,-64.2,25.1,-50.9,40.6,-38Z"
@@ -16,7 +20,7 @@ function Home() {
           />
           <text
             x="50%"
-            y="40%"
+            y="45%"
             textAnchor="middle"
             dominantBaseline="middle"
             fontSize="6"
@@ -27,23 +31,15 @@ function Home() {
           </text>
           <text
             x="50%"
-            y="47%"
+            y="52%"
             textAnchor="middle"
             dominantBaseline="middle"
             fontSize="5"
             fill="#FFFFFF"
           >
-            du 27/02/2023 au 19/12/2023
-          </text>
-          <text
-            x="50%"
-            y="55%"
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fontSize="5"
-            fill="#FFFFFF"
-          >
-            19Formation
+            <tspan>Du </tspan>
+            <tspan fontWeight="bold">27/02/2023</tspan> <tspan>au </tspan>
+            <tspan fontWeight="bold">19/12/2023</tspan>
           </text>
           <text
             x="50%"
@@ -53,11 +49,21 @@ function Home() {
             fontSize="5"
             fill="#FFFFFF"
           >
-            34 Rue Henri Rey
+            19Formation
           </text>
           <text
             x="50%"
             y="65%"
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="5"
+            fill="#FFFFFF"
+          >
+            34 Rue Henri Rey
+          </text>
+          <text
+            x="50%"
+            y="70%"
             textAnchor="middle"
             dominantBaseline="middle"
             fontSize="5"
@@ -115,7 +121,7 @@ function Home() {
           </p>
           <img className="logo" src={Logo} />
           <p className="teamTextBottom">
-            Ou <strong>bonne ambiance</strong> et <strong>tryhard</strong> sont
+            Ou <strong>tryhard</strong> et <strong>bonne ambiance</strong> sont
             les maitres mots!
           </p>
         </section>

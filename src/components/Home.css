@@ -1,19 +1,15 @@
 /* --------------------- home -------------------- */
 
-/* .homePresentation {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  height: 230px;
-  width: 100%;
-} */
-
 .homeText {
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: var(--maincolor);
   padding: 0% 10% 0% 10%;
+}
+
+.homeText svg {
+  margin: 0 15%;
 }
 
 .logo {
@@ -45,7 +41,6 @@
 .chartePicture {
   width: 160vh;
   height: auto;
-  /* background-image: url("../assets/charte.jpg"); */
 }
 
 .logoPicture {
@@ -111,4 +106,26 @@
   border-radius: 15px;
   margin: 2% 2% 0% 49%;
   padding: 10px 0;
+}
+
+.homeText {
+  animation: homeText infinite 2s ease-in-out;
+}
+@keyframes homeText {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.charteH1 {
+  animation-name: charteH1;
+}
+@keyframes charteH1 {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+  }
 }
