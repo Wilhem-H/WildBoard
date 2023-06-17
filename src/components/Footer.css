@@ -25,6 +25,5 @@ footer a {
 }
 
 footer a img:hover {
-  text-decoration: none;
   transform: scale(1.2) rotate(-1deg);
 }

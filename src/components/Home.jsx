@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Logo from "../assets/Logo.png";
 import ChartePicture from "../assets/fondImgCharte.jpg";
 import LogoPicture from "../assets/DesignTest.png";
@@ -5,6 +8,9 @@ import LogoPicture from "../assets/DesignTest.png";
 import "./Home.css";
 
 function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <main>
       <section className="homeText">
@@ -73,53 +79,67 @@ function Home() {
           </text>
         </svg>
       </section>
-      <section className="charte">
+      <section className="charte" data-aos="zoom-in">
         {/* <div className="chartePicture"></div> */}
         <img className="chartePicture" src={ChartePicture} />
-        <h1 className="charteH1">Charte de groupe</h1>
+        <h1 className="charteH1" data-aos="fade-up">
+          Charte de groupe
+        </h1>
       </section>
       <hr className="trait-horizontal" />
-      <section>
-        <p className="charteElement">
+      <section className="charte_text">
+        <p className="charteElement" data-aos="fade-right">
           I. A la pause de Laurence tu t’adapteras.
         </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
           II. Le matériel de chacun tu respecteras.
         </p>
-        <p className="charteElement">III. Le JavaScript tu vénéreras. </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
+          III. Le JavaScript tu vénéreras.{" "}
+        </p>
+        <p className="charteElement" data-aos="fade-right">
           IV. La communauté, le vendredi, tu écouteras.{" "}
         </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
           V. Sur l’espace de travail de ton voisin, tu ne déborderas pas.{" "}
         </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
           VI. Le matériel des autres, tu ne casseras pas.
         </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
           VII. La pression pour les projets, tu ne te mettras pas.{" "}
         </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
           VIII. Pour le Kahoot, tout tu donneras.{" "}
         </p>
-        <p className="charteElement">IX. Motivé, le lundi, tu viendras. </p>
-        <p className="charteElement">
+        <p className="charteElement" data-aos="fade-right">
+          IX. Motivé, le lundi, tu viendras.{" "}
+        </p>
+        <p className="charteElement" data-aos="fade-right">
           X. Nils remplace Laurence pour la règle numéro I.
         </p>
       </section>
       <section>
         <hr className="trait-horizontal" />
       </section>
-      <section className="charte">
+      <section className="charte" data-aos="zoom-in">
         <img className="logoPicture" src={LogoPicture} />
-        <h2 className="LogoH1"> Notre Logo</h2>
+        <h2 className="LogoH1" data-aos="fade-up">
+          {" "}
+          Notre Logo
+        </h2>
       </section>
       <section className="homePresentation">
         <section>
           <p className="teamTextTop">
             Une équipe <strong>motivée</strong>!
           </p>
-          <img className="logo" src={Logo} />
+          <img
+            className="logo"
+            src={Logo}
+            data-aos="zoom-in"
+            data-aos-duration="2800"
+          />
           <p className="teamTextBottom">
             Ou <strong>tryhard</strong> et <strong>bonne ambiance</strong> sont
             les maitres mots!
