@@ -3,7 +3,7 @@ import logoMeet from "./assets/logoMeet.png";
 import logoGithub from "./assets/LogoGithub.png";
 import logoDrive from "./assets/logoDrive.png";
 import logoFigma from "./assets/logoFigma.png";
-import logoTrello from "./assets/logoTrello.jpg";
+import logoTrello from "./assets/logoTrello.png";
 
 const student = [
   {
@@ -54,8 +54,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Stagy73",
-    picture:
-      "https://www.hachette.fr/sites/default/files/images/livres/couv/9782017129936-001-T.jpeg",
+    picture: "https://m.media-amazon.com/images/I/61I89ByVTXL.jpg",
     linkedin: "https://www.linkedin.com/in/nils-mehlhorn-51152823b",
   },
   {
@@ -119,9 +118,10 @@ const student = [
   {
     Name: "Wilhem",
     mail: "wilhem.hafsa@outlook.fr",
-    phone: "0618109927",
+    phone: "0681019972",
     github: "https://github.com/Wilhem-H",
-    picture: "https://m.media-amazon.com/images/I/61I89ByVTXL.jpg",
+    picture:
+      "https://www.hachette.fr/sites/default/files/images/livres/couv/9782017129936-001-T.jpeg",
     linkedin: "https://www.linkedin.com/in/wilhem-hafsa/",
   },
   {

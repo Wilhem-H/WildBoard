@@ -1,16 +1,27 @@
+.tools_content {
+  display: flex;
+  gap: 25%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 8% 5%;
+}
+
 .tools_card {
-  margin: 10% 15%;
-  gap: 20px;
   background-color: rgba(190, 0, 0);
   height: 25vh;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5%;
+  margin: 5% 0;
 }
 
-.tools_picture {
-  height: 20vh;
+.tools_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
 }
 
 .tools_link {
@@ -19,9 +30,16 @@
   font-size: 2.5em;
 }
 
+.tools_link:hover {
+  text-decoration: underline;
+}
 .tools_link span {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
+  gap: 15%;
+}
+
+.tools_picture {
+  height: 10vh;
 }

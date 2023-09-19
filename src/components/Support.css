@@ -1,26 +1,22 @@
-.liensUtiles {
-  margin: 20px 0;
+.support_title {
+  margin: 5vh 0;
 }
 
-.infos {
-  margin-bottom: 35px;
+.support_desc {
+  margin-bottom: 5vh;
 }
 
-.divButton {
+.support_selector {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2.5%;
 }
 
-.button {
+.support_button {
   font-size: 1.2em;
   margin-bottom: 25px;
   background-color: var(--maincolor);
   border-radius: 100px;
-  box-shadow: rgba(190, 0, 0, 0.2) 0 -25px 18px -14px inset,
-    rgba(190, 0, 0, 0.15) 0 1px 2px, rgba(190, 0, 0, 0.15) 0 2px 4px,
-    rgba(190, 0, 0, 0.15) 0 4px 8px, rgba(190, 0, 0, 0.15) 0 8px 16px,
-    rgba(190, 0, 0, 0.15) 0 16px 32px;
   color: var(--secondcolor);
   cursor: pointer;
   display: inline-block;
@@ -36,24 +32,67 @@
   touch-action: manipulation;
 }
 
-.button:hover {
-  box-shadow: rgba(190, 0, 0, 0.35) 0 -25px 18px -14px inset,
+.support_button:hover {
+  transform: scale(1.3) rotate(-1deg);
+  box-shadow: rgba(190, 0, 0, 1);
+  /* 0 -25px 18px -14px inset,
     rgba(190, 0, 0, 0.25) 0 1px 2px, rgba(190, 0, 0, 0.25) 0 2px 4px,
     rgba(190, 0, 0, 0.25) 0 4px 8px, rgba(190, 0, 0, 0.25) 0 8px 16px,
-    rgba(190, 0, 0, 0.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+    rgba(190, 0, 0, 0.25) 0 16px 32px; */
 }
 
-.cardSection {
+.support_cardSection {
   columns: 2;
   gap: 20px;
+  margin: 5% 0 10% 0;
 }
 
-.linkCard {
+.support_cardLink {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
+.support_card {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 0 20% 5% 20%;
+  min-width: 80%;
+  padding: 1em;
+  width: fit-content;
+  background-color: var(--maincolor);
+  color: var(--colorforbackgroundtext);
+}
+
+.support_card div {
   display: flex;
   flex-direction: column;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.support_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.support_card img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.support_card div a {
+  color: white;
+  font-size: 1.3em;
+}
+
+.support_card div p {
+  font-weight: 400;
 }
