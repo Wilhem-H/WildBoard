@@ -4,6 +4,25 @@ import logoGithub from "./assets/LogoGithub.png";
 import logoDrive from "./assets/logoDrive.png";
 import logoFigma from "./assets/logoFigma.png";
 import logoTrello from "./assets/logoTrello.png";
+import logoWild from "./assets/logoWild.png";
+import logoDiscord from "./assets/discord.png";
+
+import alex from "./assets/alex.jpg";
+import amaury from "./assets/amaury.jpg";
+import bryan from "./assets/bryan.jpg";
+import cathy from "./assets/cathy.jpg";
+import delphine from "./assets/delphine.jpg";
+import fabien from "./assets/fabien.jpg";
+import julien from "./assets/julien.jpg";
+import laetitia from "./assets/laetitia.jpg";
+import laurence from "./assets/laurence.jpg";
+import nicolas_r from "./assets/nicolas_r.jpg";
+import nicolas_w from "./assets/nicolas_w.jpg";
+import nils from "./assets/nils.jpg";
+import thomas_d from "./assets/thomas_d.jpg";
+import thomas_v from "./assets/thomas_v.jpg";
+import waheb from "./assets/waheb.png";
+import wilhem from "./assets/wilhem.jpg";
 
 const student = [
   {
@@ -11,7 +30,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/nimser",
-    picture: "https://www.rts.ch/2018/10/02/10/53/9887001.image?mw=1280",
+    picture: nicolas_w,
     linkedin: "",
   },
   {
@@ -19,8 +38,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/121019",
-    picture:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxm48yfV2hY_bCu74edFCBs-Giw45AlQ8nUA&usqp=CAU",
+    picture: cathy,
     linkedin: "",
   },
   {
@@ -28,7 +46,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/alexdubrulle",
-    picture: "https://m.media-amazon.com/images/I/61udo428pbL.jpg",
+    picture: alex,
     linkedin: "",
   },
   {
@@ -36,8 +54,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Waheb26",
-    picture:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprhwAKuiHQSPXJ9ITbV9rG2g-NHDBVcJ7xA&usqp=CAU",
+    picture: waheb,
     linkedin: "https://www.linkedin.com/in/waheb-cheraifia-58a314269/",
   },
   {
@@ -45,8 +62,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "+33686537628",
     github: "https://github.com/TaupeHumide",
-    picture:
-      "https://ec56229aec51f1baff1d-185c3068e22352c56024573e929788ff.ssl.cf1.rackcdn.com/attachments/large/0/6/4/005335064.jpg",
+    picture: nicolas_r,
     linkedin: "",
   },
   {
@@ -54,7 +70,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Stagy73",
-    picture: "https://m.media-amazon.com/images/I/61I89ByVTXL.jpg",
+    picture: nils,
     linkedin: "https://www.linkedin.com/in/nils-mehlhorn-51152823b",
   },
   {
@@ -62,7 +78,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/ThomasD26",
-    picture: "https://m.media-amazon.com/images/I/41gN2BoklqL.jpg",
+    picture: thomas_d,
     linkedin: "",
   },
   {
@@ -70,7 +86,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/fabienchbd",
-    picture: "https://m.media-amazon.com/images/I/61FibcdkZmL.jpg",
+    picture: fabien,
     linkedin: "https://www.linkedin.com/in/fabien-c-012658b3",
   },
   {
@@ -78,7 +94,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Thomas-VWD",
-    picture: "https://www.canalbd.net/img/couvpage/54/9782012245549_cg.jpg",
+    picture: thomas_v,
     linkedin: "https://www.linkedin.com/in/thomas-verwaerde-758a60131/",
   },
   {
@@ -86,8 +102,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Laetitia-gb",
-    picture:
-      "https://images2.medimops.eu/product/20e2e1/M02012248233-source.jpg",
+    picture: laetitia,
     linkedin: "",
   },
   {
@@ -95,7 +110,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/AmauryClt",
-    picture: "https://m.media-amazon.com/images/I/41jA9VxLV9L.jpg",
+    picture: amaury,
     linkedin: "https://www.linkedin.com/in/amaury-c-483030251",
   },
   {
@@ -103,7 +118,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/julien-lad",
-    picture: "https://m.media-amazon.com/images/I/41CVnDZLLbL.jpg",
+    picture: julien,
     linkedin: "https://www.linkedin.com/in/jl26",
   },
   {
@@ -111,8 +126,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://github.com/Delphine2669",
-    picture:
-      "https://www.letelegramme.fr/images/2021/01/29/madame-invention-a-rejoint-la-grande-famille-des-monsieur_5508117.jpg",
+    picture: delphine,
     linkedin: "https://www.linkedin.com/in/delphine-thevenet-66520a130/",
   },
   {
@@ -120,8 +134,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0681019972",
     github: "https://github.com/Wilhem-H",
-    picture:
-      "https://www.hachette.fr/sites/default/files/images/livres/couv/9782017129936-001-T.jpeg",
+    picture: wilhem,
     linkedin: "https://www.linkedin.com/in/wilhem-hafsa/",
   },
   {
@@ -129,7 +142,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://Plus-parmis-nous",
-    picture: "https://m.media-amazon.com/images/I/41K17ZTSB5L.jpg",
+    picture: bryan,
     linkedin: "",
   },
   {
@@ -137,8 +150,7 @@ const student = [
     mail: "wilhem.hafsa@outlook.fr",
     phone: "0618109927",
     github: "https://Plus-parmis-nous",
-    picture:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNgqQYnuAW-5xJfXxdMV8jVTmUv24bw3c1g&usqp=CAU",
+    picture: laurence,
     linkedin: "",
   },
 ];
@@ -390,13 +402,6 @@ const links = [
     desc: "Plateform de jeux algorithmique",
   },
   {
-    name: "Exercism",
-    link: "https://exercism.org/",
-    type: "algo",
-    category: "Algo",
-    desc: "Plateform de jeux algorithmique",
-  },
-  {
     name: "Blocky Games",
     link: "https://blockly.games/",
     type: "algo",
@@ -632,7 +637,7 @@ const tools = [
   {
     name: "Odyssey",
     link: "https://odyssey.wildcodeschool.com/",
-    img: "https://www.wildcodeschool.com/assets/wildcodeschool-logo-meta-image-f6f2f7f52b82bfc419f031f6a989020a8b094d7a4e6676ab6f0dff0b0f470da9.png",
+    img: logoWild,
   },
   {
     name: "Slack",
@@ -652,6 +657,11 @@ const tools = [
   },
   { name: "Figma", link: "https://www.figma.com/fr/", img: logoFigma },
   { name: "Trello", link: "https://trello.com/fr", img: logoTrello },
+  {
+    name: "Discord",
+    link: "https://discord.com/channels/1085967285283467345/1085967285283467350",
+    img: logoDiscord,
+  },
 ];
 
 export default student;

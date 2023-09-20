@@ -10,7 +10,7 @@ function Tools() {
   }, []);
 
   return (
-    <>
+    <div className="tools">
       <h1 className="tools_title">Nos outils</h1>
       <div className="tools_content">
         {tools.map((t) => (
@@ -24,7 +24,7 @@ function Tools() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

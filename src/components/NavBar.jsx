@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import logowild from "../assets/logowild.jpg";
+import laptopHQ from "../assets/laptopHQ.jpg";
 
 const Header = styled.header`
   display: flex;
@@ -29,7 +30,7 @@ const HeadSection = styled.section`
   width: 100%;
   height: 87vh;
   overflow-y: auto;
-  background-image: url(./src/assets/laptopHQ.jpg);
+  background-image: url(${laptopHQ});
   background-size: 100% 100%;
 `;
 
