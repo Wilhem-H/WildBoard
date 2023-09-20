@@ -44,11 +44,13 @@ body {
   font-size: 2rem;
   margin-right: 8px;
   font-weight: bold;
+  padding: 8% 12%;
 }
 
 .navBar:hover {
-  background-color: rgb(241, 241, 241);
+  background-color: rgba(241, 241, 241, 0.8);
   color: rgba(190, 0, 0);
+  border-radius: 5px;
 }
 
 .currentPage {

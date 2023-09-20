@@ -27,7 +27,7 @@ const Img = styled.img`
 
 const HeadSection = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 87vh;
   overflow-y: auto;
   background-image: url(./src/assets/laptopHQ.jpg);
   background-size: 100% 100%;
@@ -55,6 +55,7 @@ const Li = styled.li`
   font-size: 2rem;
   margin-right: 8px;
   font-weight: bold;
+  padding: 4%;
 `;
 
 const Ul = styled.ul`
@@ -67,6 +68,7 @@ const Ul = styled.ul`
   font-size: 2rem;
   margin-right: 8px;
   font-weight: bold;
+  padding: 4%;
 `;
 
 const CurrentPage = styled.div`
@@ -74,11 +76,9 @@ const CurrentPage = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 31%;
+  top: 27%;
   left: 45%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 300px;
 `;
 
 function NavBar() {
