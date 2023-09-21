@@ -23,14 +23,14 @@ function Team() {
             <p>
               <strong>Tél : </strong> {s.phone}
             </p>
-            <a href="https://github.com/Wilhem-H" target="_blank">
+            <a href={s.github} target="_blank">
               <img
                 className="social_icon"
                 src={iconGithub}
                 alt={`Github profile of ${s.Name}`}
               />
             </a>
-            <a href="https://www.linkedin.com/in/wilhem-hafsa/" target="_blank">
+            <a href={s.linkedin} target="_blank">
               <img
                 className="social_icon"
                 src={iconLinkedin}

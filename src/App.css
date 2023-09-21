@@ -60,3 +60,9 @@ body {
   border-radius: 10px;
   padding: 8px 20px 8px 20px;
 }
+
+@media screen and (max-width: 560px) {
+  .navBar {
+    font-size: 0.8em;
+  }
+}

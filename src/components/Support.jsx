@@ -28,22 +28,24 @@ function Support() {
   };
 
   return (
-    <>
+    <div className="support">
       <h1 className="support_title">Liens Utiles</h1>
       <h3 className="support_desc">
-        Ici sont regroupés tous les sites partagés par les wilders de valence et
-        qui peuvent nous servir tout au long de notre apprentissage:
+        Ressources Partagées par les Wilders de Valence : Liens Utiles pour
+        Notre Parcours d'Apprentissage :
       </h3>
-      <div className="support_selector">
-        {categories.map((category) => (
-          <button
-            onClick={() => handleClick(category)}
-            key={category}
-            className="support_button"
-          >
-            {category}
-          </button>
-        ))}
+      <div className="support-button-overflow">
+        <div className="support_selector">
+          {categories.map((category) => (
+            <button
+              onClick={() => handleClick(category)}
+              key={category}
+              className="support_button"
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
       <section className="support_cardSection">
         {currentCategory
@@ -84,7 +86,7 @@ function Support() {
               </div>
             ))}
       </section>
-    </>
+    </div>
   );
 }
 

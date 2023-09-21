@@ -12,6 +12,12 @@ const Header = styled.header`
   height: 15vh;
   box-sizing: border-box;
   width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+    
+  }
+
   &.scrolled {
     background-color: rgba(190, 0, 0,0.85);
     };
@@ -38,6 +44,10 @@ const P = styled.p`
   color: white;
   font-weight: bold;
   font-size: 2.2em;
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
 `;
 
 const Div = styled.div`

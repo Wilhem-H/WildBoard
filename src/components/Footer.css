@@ -1,7 +1,20 @@
-h4 {
+footer {
+  background-color: var(--maincolor);
+  width: 100vw;
+}
+
+footer h4 {
   text-align: center;
   font-size: 1rem;
   font-weight: 200;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a img:hover {
+  transform: scale(1.2) rotate(-1deg);
 }
 
 .columns {
@@ -11,19 +24,24 @@ h4 {
   padding: 1rem;
 }
 
-Footer {
-  background-color: var(--maincolor);
+.column {
+  width: 33%;
 }
 
 .social-icon {
-  width: 1.6rem;
+  width: 15%;
   margin: 0.5rem;
+  max-width: 1.6rem;
 }
 
-footer a {
-  text-decoration: none;
-}
+/* ------------- Media Query ---------------*/
 
-footer a img:hover {
-  transform: scale(1.2) rotate(-1deg);
+@media screen and (max-width: 560px) {
+  footer {
+    font-size: 0.8em;
+  }
+
+  footer h4 {
+    font-size: 0.8em;
+  }
 }

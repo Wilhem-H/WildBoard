@@ -17,6 +17,7 @@
   justify-items: center;
   gap: 20px;
   margin: 5%;
+  max-width: 100vw;
 }
 
 .card {
@@ -29,6 +30,7 @@
   padding: 1em;
   width: fit-content;
   border: 1px solid var(--maincolor);
+  min-width: 80%;
 }
 
 .card:hover {
@@ -66,4 +68,17 @@
 
 .social_icon:hover {
   transform: scale(1.2) rotate(-1deg);
+}
+
+@media screen and (max-width: 800px) {
+  .team_content {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+  }
+
+  .card {
+    width: 90vw;
+    margin: auto;
+  }
 }
