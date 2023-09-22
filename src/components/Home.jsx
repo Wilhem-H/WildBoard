@@ -119,9 +119,9 @@ function Home() {
           X. Nils remplace Laurence pour la règle numéro I.
         </p>
       </section>
-      <section>
-        <hr className="trait-horizontal" />
-      </section>
+
+      <hr className="trait-horizontal" />
+
       <section className="charte" data-aos="zoom-in">
         <img className="logoPicture" src={LogoPicture} />
         <h2 className="LogoH1" data-aos="fade-up">

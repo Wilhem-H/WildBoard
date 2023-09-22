@@ -22,7 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 100px;
+  gap: 8vh;
 }
 
 body {
@@ -64,5 +64,157 @@ body {
 @media screen and (max-width: 560px) {
   .navBar {
     font-size: 0.8em;
+  }
+
+  .currentPage {
+    font-size: 1.7em;
+  }
+}
+
+/* ------------ Menu Mobile ---------------*/
+
+.burgerMenu {
+  background-color: var(--maincolor);
+  height: 100vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.burgerMenu_close {
+  display: none;
+}
+
+.overlay_menu_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+}
+
+.overlay_menu_mobile.open {
+  display: block;
+}
+
+.navbar_burger {
+  display: none;
+  margin: 0;
+  height: 5vh;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+/* .navbar_burger svg {
+  stroke: var(--secondary_color);
+  width: 100%;
+  height: auto;
+} */
+
+.navbar_burger img {
+  width: auto;
+  height: 100%;
+}
+
+.navbar_burger_close {
+  display: none;
+}
+
+.navbar_burger_close:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+  .navbar_burger {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar_burger svg {
+    cursor: pointer;
+    margin-left: 5%;
+  }
+
+  .navbar_nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+  }
+
+  .navbar {
+    order: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    min-width: 150px;
+    height: 100vh;
+    background-color: var(--primary_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 2;
+    margin-top: 0;
+  }
+
+  .navbar.open {
+    display: flex;
+    animation: transformMenu 350ms ease-in-out forwards;
+  }
+
+  @keyframes transformMenu {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: initial;
+    }
+  }
+
+  .navbar_burger_close {
+    display: block;
+  }
+
+  .navbar_burger_close svg {
+    stroke: white;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    stroke-width: 2;
+    transition: transform 500ms ease-in-out;
+  }
+
+  .navbar_burger_close svg:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+
+  .overlay_menu_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+  }
+
+  .overlay_menu_mobile.open {
+    display: block;
   }
 }

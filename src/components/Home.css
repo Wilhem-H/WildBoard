@@ -43,7 +43,7 @@
 }
 
 .chartePicture {
-  width: 160vh;
+  width: 100vw;
   height: auto;
 }
 
@@ -127,4 +127,78 @@
   color: #ffffff;
   border-radius: 50%;
   margin: 0 5%;
+}
+
+@media screen and (max-width: 960px) {
+  .charte_text {
+    border-radius: 0;
+    padding: 5vh 0 3vh 0;
+    margin: 0;
+  }
+
+  .chartePicture {
+    max-width: 100vw;
+  }
+
+  .logoPicture {
+    max-width: 100vw;
+  }
+
+  .teamTextTop {
+    font-size: 1.2em;
+    padding: 4%;
+  }
+
+  .teamTextBottom {
+    font-size: 1.2em;
+    padding: 4% 0;
+  }
+
+  .LogoH1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .homeText svg {
+    margin: 0;
+  }
+
+  .homeText {
+    padding: 0;
+  }
+
+  .chartePicture {
+    width: 90vh;
+  }
+
+  .charteH1 {
+    font-size: 2em;
+  }
+
+  .charte_text {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .charteElement {
+    font-size: 1em;
+  }
+
+  .trait-horizontal {
+    margin: 0;
+    width: 80%;
+    align-self: center;
+  }
+
+  .logoPicture {
+    height: 90vw;
+  }
+
+  .LogoH1 {
+    font-size: 1.5em;
+    right: 0;
+    left: auto;
+    padding: 0;
+  }
 }

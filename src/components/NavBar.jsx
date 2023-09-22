@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import logowild from "../assets/logowild.jpg";
 import laptopHQ from "../assets/laptopHQ.jpg";
+import menu_icon from "/menuIcon.svg";
 
 const Header = styled.header`
   display: flex;
@@ -12,11 +13,6 @@ const Header = styled.header`
   height: 15vh;
   box-sizing: border-box;
   width: 100%;
-
-  @media (max-width: 768px) {
-    font-size: 0.8em;
-    
-  }
 
   &.scrolled {
     background-color: rgba(190, 0, 0,0.85);
@@ -30,6 +26,11 @@ const Img = styled.img`
   margin: 10px;
   margin-right: 15px;
   border-radius: 7px;
+
+  @media (max-width: 768px) {
+    height: 7vh;
+    width: auto;
+  }
 `;
 
 const HeadSection = styled.section`
@@ -38,6 +39,11 @@ const HeadSection = styled.section`
   overflow-y: auto;
   background-image: url(${laptopHQ});
   background-size: 100% 100%;
+
+  @media (max-width: 768px) {
+    height: 50vh;
+    width: auto;
+  }
 `;
 
 const P = styled.p`
@@ -80,6 +86,10 @@ const Ul = styled.ul`
   margin-right: 8px;
   font-weight: bold;
   padding: 4%;
+
+  @media (max-width: 880px) {
+    display: none;
+  }
 `;
 
 const CurrentPage = styled.div`
@@ -90,11 +100,20 @@ const CurrentPage = styled.div`
   top: 27%;
   left: 45%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 768px) {
+    top: 43%;
+  }
 `;
 
 function NavBar() {
   const [scrollTop, setScrollTop] = useState(false);
   const location = useLocation();
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const openMenuMobile = () => {
+    setOpenMenu((value) => !value);
+  };
 
   const handleScroll = () => {
     if (window.scrollY >= 600) {
@@ -112,12 +131,60 @@ function NavBar() {
 
   return (
     <HeadSection>
+      <div
+        className={
+          openMenu ? "overlay_menu_mobile" : "overlay_menu_mobile open"
+        }
+        onClick={openMenuMobile}
+      />
       <Header className={scrollTop ? "scrolled" : ""}>
         <Div className="img">
           <Img src={logowild} alt="logo école wild code school" />
           <P className="title">WildBoard</P>
         </Div>
 
+        <div className="navbar_burger" onClick={openMenuMobile}>
+          <img src={menu_icon} />
+        </div>
+
+        <div className={openMenu ? "burgerMenu_close" : "burgerMenu"}>
+          <div className="navbar_burger_close" onClick={openMenuMobile}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+          <Li>
+            <Link to="/" className="navBar">
+              Home
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/team" className="navBar">
+              Team
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/tools" className="navBar">
+              Tools
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/support" className="navBar">
+              Support
+            </Link>
+          </Li>
+        </div>
         <Ul className="menu">
           <Li>
             <Link to="/" className="navBar">

@@ -55,3 +55,13 @@
   margin-top: 5vh;
   font-size: 2.5em;
 }
+
+@media screen and (max-width: 560px) {
+  .tools_card {
+    width: 85vw;
+  }
+
+  .tools_link {
+    font-size: 1.5em;
+  }
+}
