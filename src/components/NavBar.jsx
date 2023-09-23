@@ -17,6 +17,10 @@ const Header = styled.header`
   &.scrolled {
     background-color: rgba(190, 0, 0,0.85);
     };
+
+    @media (max-width: 880px) {
+      height: 10vh;
+    }
   }
 `;
 
@@ -52,7 +56,7 @@ const P = styled.p`
   font-size: 2.2em;
 
   @media (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
 `;
 
@@ -109,7 +113,7 @@ const CurrentPage = styled.div`
 function NavBar() {
   const [scrollTop, setScrollTop] = useState(false);
   const location = useLocation();
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
 
   const openMenuMobile = () => {
     setOpenMenu((value) => !value);
@@ -165,22 +169,22 @@ function NavBar() {
             </svg>
           </div>
           <Li>
-            <Link to="/" className="navBar">
+            <Link to="/" className="navBar" onClick={openMenuMobile}>
               Home
             </Link>
           </Li>
           <Li>
-            <Link to="/team" className="navBar">
+            <Link to="/team" className="navBar" onClick={openMenuMobile}>
               Team
             </Link>
           </Li>
           <Li>
-            <Link to="/tools" className="navBar">
+            <Link to="/tools" className="navBar" onClick={openMenuMobile}>
               Tools
             </Link>
           </Li>
           <Li>
-            <Link to="/support" className="navBar">
+            <Link to="/support" className="navBar" onClick={openMenuMobile}>
               Support
             </Link>
           </Li>

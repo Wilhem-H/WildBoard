@@ -93,28 +93,37 @@
   font-weight: 400;
 }
 
+@media screen and (max-width: 950px) {
+  .support-button-overflow {
+    overflow-x: auto;
+  }
+
+  .support_selector {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .support_cardSection {
     display: flex;
     flex-direction: column;
   }
 
-  .support-button-overflow {
-    overflow-x: auto;
+  .support_card img {
+    width: 17vw;
+    height: 8vh;
+  }
+
+  .support_card {
+    margin: 0 5% 5% 5%;
+    min-width: 90vw;
   }
 
   .support_selector {
     margin-left: 15%;
     margin-right: 15%;
     width: 280vw;
-  }
-
-  .support_card img {
-    height: 10vh;
-  }
-
-  .support_card {
-    margin: 0 5% 5% 5%;
-    min-width: 90vw;
   }
 }
